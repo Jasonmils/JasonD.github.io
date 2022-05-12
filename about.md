@@ -3,6 +3,6 @@ layout: page
 title: About
 ---
 
-**Not Pure Poole** is a simple, beautiful, and powerful Jekyll theme for blogs. It is built on [Poole](https://github.com/poole/poole) and [Pure](https://purecss.io/).
-
-For more information about Not Pure Poole, please browse the [README](https://github.com/vszhub/not-pure-poole) file.
+Hi, welcome to my blog! my name’s Jason Dean (Yizhou Ding). I am currently a first-year graduate student in [HUST](https://www.hust.edu.cn). You should expect to see the following stuffs in my blog:
+- My own study blog about Deep learning, Machine Learning, statistics, Neural Network and time series forecasting.
+- Some experiences I find valuable when doing the  project in master stage.
