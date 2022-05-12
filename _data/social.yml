@@ -9,4 +9,7 @@
   icon: fab fa-github
 - title: CSDN
   url: https://blog.csdn.net/JasonDean
-  icon: fab fa-window-maximize  
+  icon: fab fa-window
+- title: CSDN
+  url: Wuhan
+  icon: fab fa-map-marker
