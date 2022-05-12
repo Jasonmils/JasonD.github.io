@@ -33,10 +33,10 @@ twitter:
   card: summary
 logo: logo.png
 social:
-  name: Songzi Vong
+  name: Yizhou Ding
   links:
-    - https://twitter.com/vszhub
-    - https://github.com/vszhub
+    - https://blog.csdn.net/JasonDean
+    - https://github.com/Jasonmils
 google_site_verification: xxxxx
 lang: en
 
@@ -54,8 +54,6 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Songzi Vong
-  url: https://github.com/vszhub/
-  email: vszhub@gmail.com
-
-theme: jekyll-theme-cayman
+  name: Yizhou Ding
+  url: https://github.com/Jasonmils
+  email: Jasonmils@163.com
