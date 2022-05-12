@@ -7,9 +7,6 @@
 - title: GitHub
   url: https://github.com/Jasonmils
   icon: fab fa-github
-- title: CSDN
+- title: Blog_CSDN
   url: https://blog.csdn.net/JasonDean
-  icon: fab fa-window
-- title: CSDN
-  url: Wuhan
-  icon: fab fa-map-marker
+  icon: fab fa-bookmark 
