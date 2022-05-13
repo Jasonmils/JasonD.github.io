@@ -116,7 +116,7 @@ multinomial_clf.fit(x_train, y_train)
 
 print("The training accuracy of Gaussian is :",gaussian_clf.score(x_test,y_test))
 print("The training accuracy of Multinomial is :",multinomial_clf.score(x_test,y_test))
-{% highlight %}
+{% endhighlight %}
 
 
 {% highlight python linenos %}
