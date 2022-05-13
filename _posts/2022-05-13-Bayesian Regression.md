@@ -9,31 +9,31 @@ toc:  true
 ---
 
 # 1. 朴素贝叶斯算法
-朴素贝叶斯算法是学习数据集的联合概率分布 \\\(P(X,Y)\\\)，而这个过程是通过学习先验概率 $P(Y=C_k)$ 和条件概率分布 $P(X=x|Y=C_k)$ 完成的。
+朴素贝叶斯算法是学习数据集的联合概率分布 \\\(P(X,Y)\\\)，而这个过程是通过学习先验概率 \\\(P(Y=C_k)\\\) 和条件概率分布 \\\(P(X=x|Y=C_k)\\\) 完成的。
 ## 1.1 定义一个数据集实例
-定义一个数据集 $T$ 为 :
+定义一个数据集 \\\(T\\\) 为 :
 
 $$
 T=\{ (x_1,y_1),(x_2,y_2),\cdots,(x_N,y_N)  \}
 $$
 
-其中 $x_i=(x_i^{(1)},x_i^{(2)},\cdots,x_i^{(n)}), x_i^{(j)}\in\{a_{j1},a_{j2},\cdots,a_{jS_j}\}$.
-$x_i^{(j)}$ 为第 $i$ 个样本的第 $j$ 个 feature，$a_{jS_j}$ 为第 $j$ 个 feature 可能取的第$S_j$个值, $j=1,2,\cdots,n$.$y_i \in \{C_1,C_2,\cdots,C_k\}$
+其中 \\\(x_i=(x_i^{(1)},x_i^{(2)},\cdots,x_i^{(n)}), x_i^{(j)}\in\{a_{j1},a_{j2},\cdots,a_{jS_j}\}\\\).
+\\\(x_i^{(j)}\\\) 为第 \\\(i\\\) 个样本的第 \\\(j\\\) 个 feature，\\\(a_{jS_j}\\\) 为第 \\\(j\\\) 个 feature 可能取的第\\\(S_j\\\)个值, \\\(j=1,2,\cdots,n\\\).\\\(y_i \in \{C_1,C_2,\cdots,C_k\}\\\)
 - *概括描述该数据集*
 
 |内容描述|数值 |典型符号|
 |--|-- |--|
-|数据集有N个样本标签|N|$y_N$, $x_N$|
-|数据集每一个x样本中对应有n个features|n|$x_i^{(n)}$|
-|数据集的标签有K类，分别为 $C_1,C_2,\cdots,C_k$|k|$C_k$|
-|每个特征 $x_i^{(j)}$ 有 $S_j$ 个可能的取值|$S_j$|$a_{jS_j}$|
+|数据集有N个样本标签|N|\\\(y_N\\\), \\\(x_N\\\)|
+|数据集每一个x样本中对应有n个features|n|\\\(x_i^{(n)}\\\)|
+|数据集的标签有K类，分别为 \\\(C_1,C_2,\cdots,C_k\\\)|k|\\\(C_k\\\)|
+|每个特征 \\\(x_i^{(j)}\\\) 有 \\\(S_j\\\) 个可能的取值|\\\(S_j\\\)|\\\(a_{jS_j}\\\)|
 
 ## 1.2 朴素贝叶斯算法步骤
-1. 计算**先验概率** $P\left(Y=C_{k}\right)$ : 得到训练集中每一类 $C_k$ 的概率.
+1. 计算**先验概率** \\\(P\left(Y=C_{k}\right)\\\) : 得到训练集中每一类 \\\(C_k\\\) 的概率.
 $$ P\left(Y=C_{k}\right)=\frac{\sum_{i=1}^{N} I\left(y_{i}=C_{k}\right)}{N}, \quad k=1,2, \cdots, K $$
-2. 计算条件概率 $P\left(X^{(j)}=a_{j l} \mid Y=c_{k}\right)$
+2. 计算条件概率 \\\(P\left(X^{(j)}=a_{j l} \mid Y=c_{k}\right)\\\)
 $$P\left(X^{(j)}=a_{j l} \mid Y=C_{k}\right)=\frac{\sum_{i=1}^{N} I\left(x_{i}^{(j)}=a_{j l}, y_{i}=c_{k}\right)}{\sum_{i=1}^{N} I\left(y_{i}=c_{k}\right)} \ \ , j=1,2, \cdots, n ; \quad l=1,2, \cdots, S_{j} ; \quad k=1,2, \cdots, K$$
-3. 对于给定的实例 $x=(x^{(1)}, x^{(2)}, \cdots, x^{(n)})^T$, 利用**贝叶斯定理**计算其**后验概率** $P\left(Y=C_{k} \mid X^{(j)}= x^{(j)}\right)$:
+3. 对于给定的实例 $x=(x^{(1)}, x^{(2)}, \cdots, x^{(n)})^T$, 利用**贝叶斯定理**计算其**后验概率** \\\(P\left(Y=C_{k} \mid X^{(j)}= x^{(j)}\right)\\\):
 $$\begin{aligned} 
 P\left(Y=C_{k} \mid X^{(j)} =  x^{(j)}\right) &=\frac{P\left(X^{(j)}= x^{(j)} \mid Y=C_{k}\right) P\left(Y=C_{k}\right)}{\sum_{k} P\left(X^{(j)}= x^{(j)} \mid Y=C_{k}\right) P\left(Y=C_{k}\right)}  \\
 &= \frac{P\left(Y=C_{k}\right) \prod_{j} P\left(X^{(j)}=x^{(j)} \mid Y=c_{k}\right)}{\sum_{k} P\left(Y=c_{k}\right) \prod_{j} P\left(X^{(j)}=x^{(j)} \mid Y=c_{k}\right)}, \quad k=1,2, \cdots, K 
@@ -47,18 +47,18 @@ P\left(Y=C_{k} \mid X^{(j)} =  x^{(j)}\right) &=\frac{P\left(X^{(j)}= x^{(j)} \m
 
 因此，仅需计算分子部分，及计算下面公式，并且比较大小：
 $$P\left(Y=C_{k}\right) \prod_{j=1}^{n} P\left(X^{(j)}=x^{(j)} \mid Y=C_{k}\right), \quad k=1,2, \cdots, K$$
-4. 最后我们确定实例 $x=(x^{(1)}, x^{(2)}, \cdots, x^{(n)})^T$ 对应的分类：
+4. 最后我们确定实例 \\\(x=(x^{(1)}, x^{(2)}, \cdots, x^{(n)})^T\\\) 对应的分类：
 $$y=\arg \max _{C_{k}} P\left(Y=C_{k}\right) \prod_{j=1}^{n} P\left(X^{(j)}=x^{(j)} \mid Y=C_{k}\right)$$
 
 # 2. 贝叶斯估计
 在朴素贝叶斯中（极大似然估计），估计的概率可能会出现0的情况，而这会影响**后验概率**的计算（1.2 朴素贝叶斯算法步骤 - 4) 因此我们需要加上Laplace 平滑使得概率大于0，从而使得连乘不至于=0.
 ## 2.1 Laplace smoothing 拉普拉斯平滑
-在朴素贝叶斯的基础上，我们在分子分母都加上一个与 $\lambda$ 相关的正系数，其中    $\lambda >0$. 当 $\lambda =0$则为极大似然估计。当 $\lambda =1$时，为拉普拉斯平滑。
+在朴素贝叶斯的基础上，我们在分子分母都加上一个与 \\\(\lambda\\\) 相关的正系数，其中 \\\(\lambda >0\\\). 当 \\\(\lambda =0\\\) 则为极大似然估计。当 \\\(\lambda =1\\\)时，为拉普拉斯平滑。
 $$ P_{\lambda}\left(X^{(j)}=a_{j l} \mid Y=c_{k}\right)=\frac{\sum_{i=1}^{N} I\left(x_{i}^{(j)}=a_{j l}, y_{i}=C_{k}\right)+\lambda}{\sum_{i=1}^{N} I\left(y_{i}=C_{k}\right)+S_{j} \lambda}$$
 此时，先验概率变为：
 $$P_{\lambda}\left(Y=C_{k}\right)=\frac{\sum_{i=1}^{N} I\left(y_{i}=C_{k}\right)+\lambda}{N+K \lambda}$$
-> 可以看到，当 $\lambda =1$ 时，相当于在N个样本的基础上增加了K个样本，并且这K个样本涵盖了每一个类别。
->  - **其实平滑过程相当于对原始数据集进行一个人为添加噪声的过程， $\lambda$ 越大，可能精度越低**
+> 可以看到，当 \\\(\lambda =1\\\) 时，相当于在N个样本的基础上增加了K个样本，并且这K个样本涵盖了每一个类别。
+>  - **其实平滑过程相当于对原始数据集进行一个人为添加噪声的过程， \\\(\lambda\\\) 越大，可能精度越低**
 >  - **朴素贝叶斯假设输入变量都是条件独立的，如果他们之间存在概率依存关系，则模型变成了贝叶斯网络**。
 
 # 3. 朴素贝叶斯的代码实现 [Python]
@@ -121,7 +121,7 @@ print("The training accuracy of Multinomial is :",multinomial_clf.score(x_test,y
 The training accuracy of Gaussian is : 0.9666666666666667
 The training accuracy of Multinomial is : 0.7666666666666667
 ```
-
+## 总结
 > 可以看到 高斯朴素贝叶斯（GaussianNB）和多项式贝叶斯（MultinomialNB）效果均比 Naive Bayesian 好, 其原因可能为：
 >  - 高斯朴素贝叶斯（GaussianNB）： 适用于处理连续型变量，因此精度可能更高
 >  - 多项式贝叶斯（MultinomialNB）： 适用于处理离散型变量

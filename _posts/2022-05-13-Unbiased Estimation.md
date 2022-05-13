@@ -26,13 +26,13 @@ $$
 \end{aligned}
 $$
 
-where $(X_1,X_2,\cdots)$ is the test set, and the widehat version is its estimations. If its mathematical expectations of absolute errors (AE) are:
+where \\\((X_1,X_2,\cdots)\\\） is the test set, and the widehat version is its estimations. If its mathematical expectations of absolute errors (AE) are:
 
 $$
 E(\widehat{\theta}) = \widehat{\theta}
 $$
 
-Then, we call $\widehat{\theta}$ is the unbiased estimator of MAE.
+Then, we call \\\(\widehat{\theta}\\\) is the unbiased estimator of MAE.
 
 To prove that MAE is a unbiased estimator:
 
