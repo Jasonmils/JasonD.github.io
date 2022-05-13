@@ -7,7 +7,7 @@ tags: [Deep learning, Statistic]
 math: true
 toc:  true
 ---
-This is an premature thought on the unbaised estimation in target regression.
+This is a premature thought on the unbiased estimation in target regression.
 {: .message }
 
 #   Why do we call test set as a way for unbiased estimation?
