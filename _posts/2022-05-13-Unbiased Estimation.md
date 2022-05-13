@@ -4,6 +4,7 @@ title: Why do we call test-set as a way for unbiased estimation
 date: 2022-05-13 10:18 +0800
 last_modified_at: 2022-05-14 01:08:25 +0800
 tags: [Deep learning, Statistic]
+math: true
 toc:  true
 ---
 
