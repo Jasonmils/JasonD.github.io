@@ -4,16 +4,19 @@ title: Bayesian Regression
 date: 2022-05-13 10:18 +0800
 last_modified_at: 2022-05-14 01:08:25 +0800
 tags: [Machine Learning, Statistic]
+math: true
 toc:  true
 ---
 
 # 1. 朴素贝叶斯算法
-朴素贝叶斯算法是学习数据集的联合概率分布 $P(X,Y)$，而这个过程是通过学习先验概率 $P(Y=C_k)$ 和条件概率分布 $P(X=x|Y=C_k)$ 完成的。
+朴素贝叶斯算法是学习数据集的联合概率分布 \\\(P(X,Y)\\\)，而这个过程是通过学习先验概率 $P(Y=C_k)$ 和条件概率分布 $P(X=x|Y=C_k)$ 完成的。
 ## 1.1 定义一个数据集实例
 定义一个数据集 $T$ 为 :
+
 $$
 T=\{ (x_1,y_1),(x_2,y_2),\cdots,(x_N,y_N)  \}
 $$
+
 其中 $x_i=(x_i^{(1)},x_i^{(2)},\cdots,x_i^{(n)}), x_i^{(j)}\in\{a_{j1},a_{j2},\cdots,a_{jS_j}\}$.
 $x_i^{(j)}$ 为第 $i$ 个样本的第 $j$ 个 feature，$a_{jS_j}$ 为第 $j$ 个 feature 可能取的第$S_j$个值, $j=1,2,\cdots,n$.$y_i \in \{C_1,C_2,\cdots,C_k\}$
 - *概括描述该数据集*
