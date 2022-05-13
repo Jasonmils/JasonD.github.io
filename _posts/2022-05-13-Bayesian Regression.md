@@ -7,6 +7,8 @@ tags: [Machine Learning, Statistic]
 math: true
 toc:  true
 ---
+This is an brief introduction to the bayesian regression (Chinese).
+{: .message }
 
 # 1. 朴素贝叶斯算法
 朴素贝叶斯算法是学习数据集的联合概率分布 \\\(P(X,Y)\\\)，而这个过程是通过学习先验概率 \\\(P(Y=C_k)\\\) 和条件概率分布 \\\(P(X=x|Y=C_k)\\\) 完成的。
