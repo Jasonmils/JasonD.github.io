@@ -89,13 +89,13 @@ Classify.fit(x_train,y_train)
 """
 print("The training accuracy of Naive Bayesian is :",Classify.score(x_train,y_train))
 print("The classifying accuracy of Naive Bayesian is :",Classify.score(x_test,y_test))
-{% end highlight %}
+{% endhighlight %}
 
 {% highlight python linenos %}
 [Results]:
 The training accuracy of Naive Bayesian is : 0.35
 The classifying accuracy of Naive Bayesian is : 0.26666666666666666
-{% end highlight %}
+{% endhighlight %}
 
 >  可见朴素贝叶斯的分类的准确度并不是很高，需要进一步提升，因为Iris 数据集的标签为 0，1，2，3. 则我们想到可以改变 朴素贝叶斯的二值化阈值 （Binarize）来提升性能。
 > - *Sklearn 中的解释为*
@@ -123,7 +123,7 @@ print("The training accuracy of Multinomial is :",multinomial_clf.score(x_test,y
 [Results]:
 The training accuracy of Gaussian is : 0.9666666666666667
 The training accuracy of Multinomial is : 0.7666666666666667
-{% end highlight %}
+{% endhighlight %}
 ## 总结
 > 可以看到 高斯朴素贝叶斯（GaussianNB）和多项式贝叶斯（MultinomialNB）效果均比 Naive Bayesian 好, 其原因可能为：
 >  - 高斯朴素贝叶斯（GaussianNB）： 适用于处理连续型变量，因此精度可能更高
