@@ -34,8 +34,8 @@ $$
 1. 计算**先验概率** \\\(P\left(Y=C_{k}\right)\\\) : 得到训练集中每一类 \\\(C_k\\\) 的概率.
 $$ P\left(Y=C_{k}\right)=\frac{\sum_{i=1}^{N} I\left(y_{i}=C_{k}\right)}{N}, \quad k=1,2, \cdots, K $$
 2. 计算条件概率 \\\(P\left(X^{(j)}=a_{j l} \mid Y=c_{k}\right)\\\)
-$$P\left(X^{(j)}=a_{j l} \mid Y=C_{k}\right)=\frac{\sum_{i=1}^{N} I\left(x_{i}^{(j)}=a_{j l}, y_{i}=c_{k}\right)}{\sum_{i=1}^{N} I\left(y_{i}=c_{k}\right)} \ \ , j=1,2, \cdots, n ; \quad l=1,2, \cdots, S_{j} ; \quad k=1,2, \cdots, K$$
-3. 对于给定的实例 $x=(x^{(1)}, x^{(2)}, \cdots, x^{(n)})^T$, 利用**贝叶斯定理**计算其**后验概率** \\\(P\left(Y=C_{k} \mid X^{(j)}= x^{(j)}\right)\\\):
+$$ P\left(X^{(j)}=a_{j l} \mid Y=C_{k}\right)=\frac{\sum_{i=1}^{N} I\left(x_{i}^{(j)}=a_{j l}, y_{i}=c_{k}\right)}{\sum_{i=1}^{N} I\left(y_{i}=c_{k}\right)} \ \ , j=1,2, \cdots, n ; \quad l=1,2, \cdots, S_{j} ; \quad k=1,2, \cdots, K$$
+3. 对于给定的实例 \\\(x=(x^{(1)}, x^{(2)}, \cdots, x^{(n)})^T\\\), 利用**贝叶斯定理**计算其**后验概率** \\\(P\left(Y=C_{k} \mid X^{(j)}= x^{(j)}\right)\\\):
 $$\begin{aligned} 
 P\left(Y=C_{k} \mid X^{(j)} =  x^{(j)}\right) &=\frac{P\left(X^{(j)}= x^{(j)} \mid Y=C_{k}\right) P\left(Y=C_{k}\right)}{\sum_{k} P\left(X^{(j)}= x^{(j)} \mid Y=C_{k}\right) P\left(Y=C_{k}\right)}  \\
 &= \frac{P\left(Y=C_{k}\right) \prod_{j} P\left(X^{(j)}=x^{(j)} \mid Y=c_{k}\right)}{\sum_{k} P\left(Y=c_{k}\right) \prod_{j} P\left(X^{(j)}=x^{(j)} \mid Y=c_{k}\right)}, \quad k=1,2, \cdots, K 
@@ -124,6 +124,7 @@ print("The training accuracy of Multinomial is :",multinomial_clf.score(x_test,y
 The training accuracy of Gaussian is : 0.9666666666666667
 The training accuracy of Multinomial is : 0.7666666666666667
 {% endhighlight %}
+
 ## 总结
 > 可以看到 高斯朴素贝叶斯（GaussianNB）和多项式贝叶斯（MultinomialNB）效果均比 Naive Bayesian 好, 其原因可能为：
 >  - 高斯朴素贝叶斯（GaussianNB）： 适用于处理连续型变量，因此精度可能更高
