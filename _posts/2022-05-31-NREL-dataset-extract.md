@@ -67,3 +67,4 @@ for region in Selected_idx:
 
 ```
 
+> The complete project can be found on [github](https://github.com/Jasonmils/Extract-wind-power-data-from-NREL-url-using-python)
