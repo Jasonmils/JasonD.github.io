@@ -7,15 +7,18 @@ tags: [Federated_Learning, DeepLearning ]
 math: true
 toc:  true
 ---
+A specific inference concerning the convergence of Federated learning.
+{: .message }
 
 # Introduction
 This is a note to record the inference steps of the FedAvg convergence.
-Similar to [[Model concergence analysis]] we conduct convergence anlysis in FedAVG, and it is originated from [[Wang 等。 - 2021 - A Field Guide to Federated Optimization.pdf]] .
+Similar to Model concergence analysis we conduct convergence anlysis in FedAVG, and it is originated from [[Wang 等。 - 2021 - A Field Guide to Federated Optimization.pdf]] .
 
 # Model convergence Assumptions and Preliminaries
 1.  **Local update SGD:** $x_i$ is the local model parameter for client $i$. t: global round index; k: local step index$$
 x_i^{(t,k+1)}:= x_i^{(t,k)}-\eta\frac{\partial \mathcal{L}}{\partial x_i^{(t,k)}}  = x_i^{(t,k)}-\eta\nabla x_i^{(t,k)}
 $$
+
 2. **Overall optimization objective:** We have client population as $\mathcal{C} = \{1,2,3,\cdots,M\}$ the objective is $$
 \min F(x)=\mathbb{E}_{i\sim\mathcal{C}}(F_i(x))
 $$

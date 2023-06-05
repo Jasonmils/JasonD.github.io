@@ -7,6 +7,8 @@ tags: [Convergence]
 math: true
 toc:  true
 ---
+A specific inference concerning the convergence of Federated learning.
+{: .message }
 
 # Optimization objective
 $$x^*=\min f(x), \quad s.t. \Vert x\Vert$$

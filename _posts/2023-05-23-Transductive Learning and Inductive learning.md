@@ -8,6 +8,10 @@ math: true
 toc:  true
 ---
 
+---
+Some detail concerning the difference between Transductive and Inductive Learning.
+{: .message }
+
 #Transductive #Inductive #learning
 > 通俗来说：课后作业里留了期中考试原题的是transductive learning,不留的是inductive learning,而且都不给答案。所以有原题的学生成绩更好
 
