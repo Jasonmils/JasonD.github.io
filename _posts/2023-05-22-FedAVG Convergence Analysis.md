@@ -1,7 +1,13 @@
 ---
-date created: 2022-11-23 14:22
+layout: post
+title: Convergence Analysis of the Federated Learning
+date: 2023-05-31 10:18 +0800
+last_modified_at: 2023-05-31 01:08:25 +0800
+tags: [Federated_Learning, DeepLearning ]
+math: true
+toc:  true
 ---
-#Federated_Learning #DeepLearning 
+
 # Introduction
 This is a note to record the inference steps of the FedAvg convergence.
 Similar to [[Model concergence analysis]] we conduct convergence anlysis in FedAVG, and it is originated from [[Wang 等。 - 2021 - A Field Guide to Federated Optimization.pdf]] .

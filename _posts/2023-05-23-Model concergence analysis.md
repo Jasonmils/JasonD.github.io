@@ -1,3 +1,13 @@
+---
+layout: post
+title: Model Convergence Analysis
+date: 2023-05-31 10:18 +0800
+last_modified_at: 2023-05-31 01:08:25 +0800
+tags: [Convergence]
+math: true
+toc:  true
+---
+
 # Optimization objective
 $$x^*=\min f(x), \quad s.t. \Vert x\Vert$$
 # General convergence analysis

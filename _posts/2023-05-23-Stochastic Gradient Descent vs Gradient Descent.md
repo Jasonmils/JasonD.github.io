@@ -1,3 +1,13 @@
+---
+layout: post
+title: Convergence Analysis of the Federated Learning
+date: 2023-05-31 10:18 +0800
+last_modified_at: 2023-05-31 01:08:25 +0800
+tags: [Gradient,Descent]
+math: true
+toc:  true
+---
+
 # Gradient descent 
 **Key issue:** all the data sample from the dataset $D = \{(x_i,y_i)\}^N_{i=1}$ are used for gradient computation and update in a single iteration.  (``Batchsize`` = N)
 # SGD (Mini-Batch)
