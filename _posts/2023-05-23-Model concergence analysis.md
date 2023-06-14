@@ -7,7 +7,7 @@ tags: [Convergence]
 math: true
 toc:  true
 ---
-A specific inference concerning the convergence of Federated learning.
+Some detail concerning the Model Convergence Analysis.
 {: .message }
 
 # Optimization objective

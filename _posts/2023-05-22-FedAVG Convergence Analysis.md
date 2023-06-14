@@ -52,6 +52,7 @@ $$
 $$
 \mathbb{E}\left[\left\Vert\nabla x_i^{(t,k)}-\nabla F_i(x_i^{(t,k)})\right\Vert^2|x_i^{(t,k)}\right] \leq \sigma^2
 $$ *This is to say, the gradient of the SGD is close to the gradient of the GD*
+
 ## Data heterogeneity/similarity across clients
 Local gradient $\nabla F_i(x)$ and global gradient $\nabla F(x)$ is $\zeta$ - uniformly bounded.  
 $$
