@@ -9,7 +9,6 @@ You should expect to see the following stuffs in my blog:
 
 - My own study blog about Renewable Power System Operation, Deep learning, Machine Learning, Statistics, Neural Network and time series forecasting.
 - Some experiences I find valuable when doing the  project in master stage.
-- My [CV](resume_YizhouDING.pdf) (updating date: June 2023) 
-  
+- My [CV](resume_YizhouDING.pdf) (updating date: June 2023)  and [Google Scholar](https://scholar.google.com/citations?hl=en&user=ei8WkXgAAAAJ)
 
-<!-- <iframe src="" width="100%" height="600px"></iframe> -->
+<!-- <iframe src="https://scholar.google.com/citations?hl=en&user=ei8WkXgAAAAJ" width="100%" height="600px"></iframe> -->
