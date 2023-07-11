@@ -9,7 +9,7 @@ You should expect to see the following stuffs in my blog:
 
 - My own study blog about Renewable Power System Operation, Deep learning, Machine Learning, Statistics, Neural Network and time series forecasting.
 - Some experiences I find valuable when doing the  project in master stage.
-- My [CV](https://github.com/022f403d-8834-4ade-9b71-9e9982d95391) (updating date: June 2023)
+- My [CV](updating date: June 2023) <a href="https://github.com/Jasonmils/Page/blob/master/_data/resume_YizhouDING.pdf" download>Download PDF</a>
   
 ---
 
